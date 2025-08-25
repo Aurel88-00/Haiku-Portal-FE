@@ -1,0 +1,172 @@
+@import "tailwindcss";
+
+:root {
+  --background: oklch(0.9852 0.0013 67.81);
+  --foreground: oklch(0.2664 0.0135 248.33);
+
+  --card: oklch(1 0 0);
+  --card-foreground: oklch(0.2664 0.0135 248.33);
+
+  --popover: oklch(1 0 0);
+  --popover-foreground: oklch(0.2664 0.0135 248.33);
+
+  /* Cherry blossom pink as primary */
+  --primary: oklch(0.6776 0.1706 1.91);
+  --primary-foreground: oklch(1 0 0);
+  --primary-glow: oklch(0.8018 0.1083 358.28);
+
+  /* Soft bamboo green */
+  --secondary: oklch(0.8921 0.0263 145.35);
+  --secondary-foreground: oklch(0.4024 0.0764 143.99);
+
+  /* Soft muted tones */
+  --muted: oklch(0.9625 0.0022 67.8);
+  --muted-foreground: oklch(0.5921 0.0247 248.24);
+
+  /* Gentle accent */
+  --accent: oklch(0.927 0.0204 106.79);
+  --accent-foreground: oklch(0.432 0.0569 108.56);
+
+  /* Soft warning/destructive */
+  --destructive: oklch(0.6287 0.1669 23.18);
+  --destructive-foreground: oklch(1 0 0);
+
+  --border: oklch(0.9253 0.006625561408419784 67.74303037945812);
+  --input: oklch(1 0 0);
+  --ring: oklch(0.6776 0.1706 1.91);
+
+  --radius: 0.75rem;
+
+  /* Custom haiku app design tokens */
+  --gradient-cherry: linear-gradient(
+    135deg,
+    hsl(oklch(0.6776 0.1706 1.91)),
+    hsl(oklch(0.8018 0.1083 358.28))
+  );
+  --gradient-nature: linear-gradient(
+    180deg,
+    hsl(oklch(0.9655 0.0129 145.47)),
+    hsl(oklch(0.8921 0.0263 145.35))
+  );
+  --shadow-soft: 0 4px 20px -4px hsl(oklch(0.6776 0.1706 1.91) / 0.2);
+  --shadow-paper: 0 2px 10px -2px hsl(oklch(0.2664 0.0135 248.33) / 0.1);
+  --transition-zen: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+
+  /* Typography scale for haiku */
+  --text-haiku: 1.5rem;
+  --text-syllable: 0.875rem;
+
+  --sidebar-background: oklch(0.9848 0 0);
+
+  --sidebar-foreground: oklch(0.3705 0.012 285.8);
+
+  --sidebar-primary: oklch(0.2103 0.0059 285.88);
+
+  --sidebar-primary-foreground: oklch(0.9848 0 0);
+
+  --sidebar-accent: oklch(0.9676 0.0013 286.37);
+
+  --sidebar-accent-foreground: oklch(0.2103 0.0059 285.88);
+
+  --sidebar-border: oklch(0.9278 0.0058 264.53);
+
+  --sidebar-ring: oklch(0.6232 0.1879 259.8);
+}
+
+@theme {
+  /* Colors */
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+
+  --color-card: var(--card);
+  --color-card-foreground: var(--card-foreground);
+
+  --color-popover: var(--popover);
+  --color-popover-foreground: var(--popover-foreground);
+
+  --color-primary: var(--primary);
+  --color-primary-foreground: var(--primary-foreground);
+  --color-primary-glow: var(--primary-glow);
+
+  --color-secondary: var(--secondary)
+  --color-secondary-foreground: var(--secondary-foreground);
+
+  --color-muted: var(--muted);
+  --color-muted-foreground: var(--muted-foreground);
+
+  --color-accent: var(--accent);
+  --color-accent-foreground: var(--accent-foreground);
+
+  --color-destructive: var(--destructive);
+  --color-destructive-foreground: var(--destructive-foreground);
+
+  --color-border: var(--border);
+  --color-input: var(--input);
+  --color-ring: var(--ring);
+
+  --color-sidebar-background: var(--sidebar-background);
+  --color-sidebar-foreground: var(--sidebar-foreground);
+  --color-sidebar-primary: var(--sidebar-primary);
+  --color-sidebar-primary-foreground: var(--sidebar-primary-foreground);
+  --color-sidebar-accent: var(--sidebar-accent);
+  --color-sidebar-accent-foreground: var(--sidebar-accent-foreground);
+  --color-sidebar-border: var(--sidebar-border);
+  --color-sidebar-ring: var(--sidebar-ring);
+
+  /* Text size */
+  --text-haiku: var(--text-haiku);
+  --text-syllable: var( --text-syllable);
+   
+  /* Rest */
+  --radius: var(--radius);
+  --gradient-cherry: var(--gradient-cherry);
+  --gradient-nature: var(--gradient-nature);
+  --shadow-soft: var(--shadow-soft);
+  --shadow-paper: var(--shadow-paper);
+  --transition-zen: var(--transition-zen);
+
+}
+.dark {
+  --background: 222.2 84% 4.9%;
+  --foreground: 210 40% 98%;
+
+  --card: 222.2 84% 4.9%;
+  --card-foreground: 210 40% 98%;
+
+  --popover: 222.2 84% 4.9%;
+  --popover-foreground: 210 40% 98%;
+
+  --primary: 210 40% 98%;
+  --primary-foreground: 222.2 47.4% 11.2%;
+
+  --secondary: 217.2 32.6% 17.5%;
+  --secondary-foreground: 210 40% 98%;
+
+  --muted: 217.2 32.6% 17.5%;
+  --muted-foreground: 215 20.2% 65.1%;
+
+  --accent: 217.2 32.6% 17.5%;
+  --accent-foreground: 210 40% 98%;
+
+  --destructive: 0 62.8% 30.6%;
+  --destructive-foreground: 210 40% 98%;
+
+  --border: 217.2 32.6% 17.5%;
+  --input: 217.2 32.6% 17.5%;
+  --ring: 212.7 26.8% 83.9%;
+  --sidebar-background: oklch(0.2103 0.0059 285.88);
+  --sidebar-foreground: oklch(0.9676 0.0013 286.37);
+  --sidebar-primary: 224.3 76.3% 48%;
+  --sidebar-primary-foreground: oklch(1 0 0);
+  --sidebar-accent: 240 3.7% 15.9%;
+  --sidebar-accent-foreground: oklch(0.9676 0.0013 286.37);
+  --sidebar-border: 240 3.7% 15.9%;
+  --sidebar-ring: oklch(0.6232 0.1879 259.8);
+}
+
+@layer base {
+  button:not(:disabled),
+  [role="button"]:not(:disabled) {
+    cursor: pointer;
+  }
+}
