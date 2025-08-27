@@ -22,6 +22,7 @@ export default function RootLayout({
     <html lang="en">
       <head>
         <link rel="icon" href="/haiku-icon.png" sizes="any" />
+        <link rel="apple-touch-icon" href="haiku-icon.png" sizes="any"/>
       </head>
       <body
         className={`${roboto.variable} antialiased`}
